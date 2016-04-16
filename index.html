@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Ruby Basics</title>
+		<title>Ruby Control Flow</title>
 
-		<meta name="description" content="Ruby basics lecture (part 1)">
+		<meta name="description" content="Ruby Control Flow lecture (part 1)">
 		<meta name="author" content="Vasyl Lasiak">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -35,20 +35,104 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Ruby basics</h1>
-					<h3>(part 1)</h3>
+					<h2>Ruby Control Flow</h2>
+					<h3>Part I</h3>
+				</section>
+
+				<section>
+					<h2>Quick overview</h2>
+					<ul>
+						<li>Data Types</li>
+						<li>Expressions</li>
+						<li>Operators</li>
+						<li>Methods (defining / calling)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Data Types</h2>
+					<ul>
+						<li>Booleans</li>
+						<li>Numbers</li>
+						<li>Strings</li>
+						<li>Symbols</li>
+						<li>Arrays</li>
+						<li>Ranges</li>
+						<li>Hashes</li>
+						<li>Nil</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Booleans</h2>
+				</section>
+
+				<section>
+					<h2>Numbers</h2>
+					<ul>
+						<li>Fixnum</li>
+						<li>Integer</li>
+						<li>Numeric</li>
+						<li>Float</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Strings</h2>
+				</section>
+
+				<section>
+					<h2>Symbols</h2>
+				</section>
+
+				<section>
+					<h2>Arrays</h2>
+				</section>
+
+				<section>
+					<h2>Ranges</h2>
+				</section>
+
+				<section>
+					<h2>Hashes</h2>
+				</section>
+
+				<section>
+					<h2>Nil</h2>
+				</section>
+
+				<section>
+					<h2>Duct Typing</h2>
+				</section>
+
+				<section>
+					<h2>Expressions</h2>
+					<h4>Variables</h4>
+					<h6>Naming</h6>
+				</section>
+
+				<section>
+					<h2>Operators</h2>
+					<h4>Priority</h4>
+				</section>
+
+				<section>
+					<h2>Methods</h2>
+				</section>
+
+				<section>
+					<img src="img/QA.jpg" width="85%" alt="Q&A" style="border: none" />
+					<h6>No questions? No answers!</h6>
 					<p>
 						<small>Created by Vasyl Lasiak / <a href="https://github.com/vlasiak" target="_blank">@vlasiak</a></small>
 					</p>
 				</section>
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -61,10 +145,16 @@
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				history: true,
+				slideNumber: true,
+				history: false,
 				center: true,
+				overview: true,
+				touch: true,
+				loop: false,
+				autoSlide: 0,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+				transitionSpeed: 'fast', // default/fast/slow
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -78,6 +168,5 @@
 			});
 
 		</script>
-
 	</body>
 </html>
