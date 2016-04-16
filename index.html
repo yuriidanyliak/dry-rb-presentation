@@ -145,7 +145,7 @@ false.class => FalseClass
 :ruby.class => Symbol
 'ruby'.to_sym => :ruby
 
-'Ruby rocks' if current_lecture == :ruby_basics => "Ruby rocks"
+'Ruby basics lecture' if current_lecture == :ruby_basics => "Ruby basics lecture"
 					</code></pre>
 					<small><a href="http://ruby-doc.org/core-2.2.0/Symbol.html" target="_blank">Symbol Class methods</a></small>
 				</section>
@@ -181,19 +181,53 @@ array[2, 2] => [true, 4]
 
 				<section>
 					<h2>Hashes</h2>
+					<p align="left">A Hash (associative array, map, or dictionary) is a collection of key-value pairs. It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.</p>
+					<pre><code class="hljs" data-trim>
+person = { name: 'Vasyl', age: 22, address: 'Lviv city' }
+person.class => Hash
+person[:name] => "Vasyl"
+person[:age] => 22
+person[:gender] => nil
+
+person = { 'name' => 'Vasyl', 'age' => 22, 'address' => 'Lviv city' }
+person.class => Hash
+person[:name] => nil
+person['name'] => "Vasyl"
+...
+					</code></pre>
+					<small><a href="http://ruby-doc.org/core-1.8.7/Hash.html" target="_blank">Hash Class methods</a></small>
 				</section>
 
 				<section>
 					<h2>Nil</h2>
+					<p align="left">Nil is an object to represent nothing. Could be interpreted as false inside the conditional statements.</p>
+					<pre><code class="hljs" data-trim>
+nil.class => NilClass
+
+nil.nil? => true
+nil.to_a => []
+nil.to_i => 0
+					</code></pre>
 				</section>
 
 				<section>
 					<h2>Other "Type-like" Classes</h2>
-					<ul>
-						<li><a href="http://ruby-doc.org/core-2.2.0/Time.html" target="_blank">Time Class methods</a></li>
-						<li><a href="http://ruby-doc.org/stdlib-2.3.0/libdoc/date/rdoc/Date.html" target="_blank">Date Class methods</a></li>
-						<li><a href="http://ruby-doc.org/stdlib-2.3.0/libdoc/date/rdoc/DateTime.html" target="_blank">DateTime Class methods</a></li>
-						<li><a href="http://ruby-doc.org/core-2.2.0/Regexp.html" target="_blank">Regexp Class methods</a></li>
+						<a href="http://ruby-doc.org/core-2.2.0/Time.html" target="_blank">Time Class methods</a><br />
+						<a href="http://ruby-doc.org/stdlib-2.3.0/libdoc/date/rdoc/DateTime.html" target="_blank">DateTime Class methods</a>
+						<pre><code class="hljs" data-trim>
+Time.now => "2016-04-16 23:01:04 +0300"
+...
+						</code></pre>
+						<a href="http://ruby-doc.org/stdlib-2.3.0/libdoc/date/rdoc/Date.html" target="_blank">Date Class methods</a>
+						<pre><code class="hljs" data-trim>
+Date.parse('12/01/2016').month => 1
+...
+						</code></pre>
+						<a href="http://ruby-doc.org/core-2.2.0/Regexp.html" target="_blank">Regexp Class methods</a>
+						<pre><code class="hljs" data-trim>
+/http/ =~ 'http://www.vk.com' => 0
+...
+						</code></pre>
 					</ul>
 				</section>
 
