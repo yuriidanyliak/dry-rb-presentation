@@ -124,10 +124,30 @@ false.class => FalseClass
 
 				<section>
 					<h2>Strings</h2>
+					<p align="left">A string is a data type representing textual data (sequence of unicode characters).</p>
+					<pre><code class="hljs" data-trim>
+'Ruby'.class => String
+'ruby'.capitalize => "Ruby"
+'RubY'.downcase => "ruby"
+
+"The time is #{Time.now}" => "The time is 2016-04-16 20:24:35 +0300"
+'The time is #{Time.now}' => "The time is \#{Time.now}"
+'The time is ' + Time.now.to_s => "The time is 2016-04-16 20:24:35 +0300"
+'The time is '.concat(Time.now.to_s) => "The time is 2016-04-16 20:24:35 +0300"
+					</code></pre>
+					<small><a href="http://ruby-doc.org/core-2.2.0/String.html" target="_blank">String Class methods</a></small>
 				</section>
 
 				<section>
 					<h2>Symbols</h2>
+					<p align="left">Symbols are simply constant names that you don’t have to predeclare and that are guaranteed to be unique. A symbol literal starts with a colon and is normally followed by some kind of name.<br />Symbols are frequently used as keys in hashes.</p>
+					<pre><code class="hljs" data-trim>
+:ruby.class => Symbol
+'ruby'.to_sym => :ruby
+
+'Ruby rocks' if current_lecture == :ruby_basics => "Ruby rocks"
+					</code></pre>
+					<small><a href="http://ruby-doc.org/core-2.2.0/Symbol.html" target="_blank">Symbol Class methods</a></small>
 				</section>
 
 				<section>
