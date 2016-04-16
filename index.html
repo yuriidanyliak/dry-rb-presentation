@@ -72,37 +72,54 @@
 					<h2>Booleans</h2>
 					<p align="left"> Boolean data type - type of data, intended to represent the only 2 options: 'True' and 'False'. Mostly used inside the conditional statements.
 
-					<pre><code class="hljs" data-trimS>
-p true.class => TrueClass
-p false.class => FalseClass
+					<pre><code class="hljs" data-trim>
+true.class => TrueClass
+false.class => FalseClass
 
-p 'Ruby awesome' if true => "Ruby awesome"
-p 'Ruby sucks' if false => nil
+'Ruby awesome' if true => "Ruby awesome"
+'Ruby sucks' if false => nil
 					</code></pre>
 				</section>
 
 				<section>
-					<h2>Numbers</h2>
-					<img src="img/ruby_numbers.png" width="60%" alt="Numbers in Ruby" style="border: none" />
-				</section>
+					<section>
+						<h2>Numbers</h2>
+						<img src="img/ruby_numbers.png" width="60%" alt="Numbers in Ruby" style="border: none" />
+						<br />
+						<small><a href="http://ruby-doc.org/core-2.2.0/Numeric.html" target="_blank">Numeric Class methods</a></small>
+					</section>
 
-				<section>
-					<h2>Integer</h2>
-					<p align="left"> Integer numbers is simply a sequence of digits.<br />Fixnum numbers are integers up to a certain limit. The limit is machine dependent.<br />Bignum values hold integers outside the range of the Fixnum.<br />If any operation on a Fixnum exceeds its range, the value is automatically converted to a Bignum.</p>
-					<pre><code class="hljs" data-trimS>
+					<section>
+						<h2>Integer</h2>
+						<p align="left"> Integer numbers is simply a sequence of digits.<br />Fixnum numbers are integers up to a certain limit. The limit is machine dependent.<br />Bignum values hold integers outside the range of the Fixnum.<br />If any operation on a Fixnum exceeds its range, the value is automatically converted to a Bignum.</p>
+						<pre><code class="hljs" data-trim>
 0.zero? => true
 7.next => 8
+-5 + 7 => 2
+5 / 2 => 2
 
 1000.class => Fixnum
 1_000_000_000_000.class => Bignum
-					</code></pre>
-					<small>More about Integer Class is <a href="http://ruby-doc.org/core-2.2.0/Integer.html" target="_blank">here</a></small>
-				</section>
+						</code></pre>
+						<small><a href="http://ruby-doc.org/core-2.2.0/Integer.html" target="_blank">Integer Class methods</a></small> * 
+						<small><a href="http://ruby-doc.org/core-2.2.0/Fixnum.html" target="_blank">Fixnum Class methods</a></small><br /> * 
+						<small><a href="http://ruby-doc.org/core-2.2.0/Bignum.html" target="_blank">Bignum Class methods</a></small>
+					</section>
 
-				<section>
-					<h2>Float</h2>
-					<p align="left"> Integer numbers is simply a sequence of digits</p>
-					5.8.integer? => false
+					<section>
+						<h2>Float</h2>
+						<p align="left">Floating point numbers represent real numbers.<br />Complex, Big Decimal and Rational classes are not built-in to Ruby, but are distributet with Ruby as part of the standart library.</p>
+						<pre><code class="hljs" data-trim>
+5.8.integer? => false
+7.1 - 2 => 5.1
+3 - 1.5 => 1.5
+5.0 / 2 => 2.5
+
+(5.0 / 2).class => Float
+						</code></pre>
+						<small><a href="http://ruby-doc.org/core-2.2.0/Float.html" target="_blank">Float Class methods</a></small> * 
+						<small><a href="http://ruby-doc.org/stdlib-2.1.1/libdoc/bigdecimal/rdoc/BigDecimal.html" target="_blank">Big Decimal Class methods</a></small>
+					</section>
 				</section>
 
 				<section>
@@ -126,11 +143,15 @@ p 'Ruby sucks' if false => nil
 				</section>
 
 				<section>
-					<h2>Time</h2>
+					<h2>Nil</h2>
 				</section>
 
 				<section>
-					<h2>Nil</h2>
+					<h1>Other Classes</h1>
+					<h4>Time</h4>
+					<h4>Date</h4>
+					<h4>DateTime</h4>
+					<h4>Regex</h4>
 				</section>
 
 				<section>
