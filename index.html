@@ -124,7 +124,7 @@ false.class => FalseClass
 
 				<section>
 					<h2>Strings</h2>
-					<p align="left">A string is a data type representing textual data (sequence of unicode characters).</p>
+					<p align="left">A string is a data type representing textual data (sequence of unicode characters). Double quoted strings allow interpolation.</p>
 					<pre><code class="hljs" data-trim>
 'Ruby'.class => String
 'ruby'.capitalize => "Ruby"
@@ -152,10 +152,31 @@ false.class => FalseClass
 
 				<section>
 					<h2>Arrays</h2>
+					<p align="left">Array is an indexed collection of elements, accessible using a key. The key is an integer and starts with 0 index.</p>
+					<pre><code class="hljs" data-trim>
+[1, 2, 3].class = Array
+
+array = [1, 'second', true, 4, 5] = > [1, 'second', true, 4, 5]
+array[0] => 1
+array.last => 5
+array[-2] => 4
+array[2, 2] => [true, 4]
+[1, 2, 'str', 5].map{ |element| element * 2 } => [2, 4, "strstr", 10]
+					</code></pre>
+					<small><a href="http://ruby-doc.org/core-2.2.0/Array.html" target="_blank">Array Class methods</a></small>
 				</section>
 
 				<section>
 					<h2>Ranges</h2>
+					<p align="left">A Range represents an interval — a set of values with a beginning and an end.</p>
+					<pre><code class="hljs" data-trim>
+(1..10).class => Range
+
+(1..10).include?(5) => true
+(-5..-1).to_a => [-5, -4, -3, -2, -1]
+('a'...'d').each_with_index { |n, i| print "#{i + 1}: #{n}, " } => "1: a, 2: b, 3: c"
+					</code></pre>
+					<small><a href="http://ruby-doc.org/core-2.2.0/Range.html" target="_blank">Range Class methods</a></small>
 				</section>
 
 				<section>
@@ -167,11 +188,13 @@ false.class => FalseClass
 				</section>
 
 				<section>
-					<h1>Other Classes</h1>
-					<h4>Time</h4>
-					<h4>Date</h4>
-					<h4>DateTime</h4>
-					<h4>Regex</h4>
+					<h2>Other "Type-like" Classes</h2>
+					<ul>
+						<li><a href="http://ruby-doc.org/core-2.2.0/Time.html" target="_blank">Time Class methods</a></li>
+						<li><a href="http://ruby-doc.org/stdlib-2.3.0/libdoc/date/rdoc/Date.html" target="_blank">Date Class methods</a></li>
+						<li><a href="http://ruby-doc.org/stdlib-2.3.0/libdoc/date/rdoc/DateTime.html" target="_blank">DateTime Class methods</a></li>
+						<li><a href="http://ruby-doc.org/core-2.2.0/Regexp.html" target="_blank">Regexp Class methods</a></li>
+					</ul>
 				</section>
 
 				<section>
@@ -195,8 +218,13 @@ false.class => FalseClass
 				</section>
 
 				<section>
+					<h1>Some practice?</h1>
+					<img src="img/practice.jpg" width="75%" alt="Practice" style="border: none" />
+				</section>
+
+				<section>
 					<img src="img/QA.jpg" width="85%" alt="Q&A" style="border: none" />
-					<h6>No questions? No answers!</h6>
+					<h6 class="fragment">No questions? No answers!</h6>
 					<p>
 						<small>Created by Vasyl Lasiak / <a href="https://github.com/vlasiak" target="_blank">@vlasiak</a></small>
 					</p>
