@@ -70,16 +70,39 @@
 
 				<section>
 					<h2>Booleans</h2>
+					<p align="left"> Boolean data type - type of data, intended to represent the only 2 options: 'True' and 'False'. Mostly used inside the conditional statements.
+
+					<pre><code class="hljs" data-trimS>
+p true.class => TrueClass
+p false.class => FalseClass
+
+p 'Ruby awesome' if true => "Ruby awesome"
+p 'Ruby sucks' if false => nil
+					</code></pre>
 				</section>
 
 				<section>
 					<h2>Numbers</h2>
-					<ul>
-						<li class="fragment">Fixnum</li>
-						<li class="fragment">Integer</li>
-						<li class="fragment">Numeric</li>
-						<li class="fragment">Float</li>
-					</ul>
+					<img src="img/ruby_numbers.png" width="60%" alt="Numbers in Ruby" style="border: none" />
+				</section>
+
+				<section>
+					<h2>Integer</h2>
+					<p align="left"> Integer numbers is simply a sequence of digits.<br />Fixnum numbers are integers up to a certain limit. The limit is machine dependent.<br />Bignum values hold integers outside the range of the Fixnum.<br />If any operation on a Fixnum exceeds its range, the value is automatically converted to a Bignum.</p>
+					<pre><code class="hljs" data-trimS>
+0.zero? => true
+7.next => 8
+
+1000.class => Fixnum
+1_000_000_000_000.class => Bignum
+					</code></pre>
+					<small>More about Integer Class is <a href="http://ruby-doc.org/core-2.2.0/Integer.html" target="_blank">here</a></small>
+				</section>
+
+				<section>
+					<h2>Float</h2>
+					<p align="left"> Integer numbers is simply a sequence of digits</p>
+					5.8.integer? => false
 				</section>
 
 				<section>
@@ -103,6 +126,10 @@
 				</section>
 
 				<section>
+					<h2>Time</h2>
+				</section>
+
+				<section>
 					<h2>Nil</h2>
 				</section>
 
@@ -112,8 +139,9 @@
 
 				<section>
 					<h2>Expressions</h2>
+					<h4>Constants</h4>
 					<h4>Variables</h4>
-					<h6>Naming</h6>
+					<h4>Naming</h4>
 				</section>
 
 				<section>
