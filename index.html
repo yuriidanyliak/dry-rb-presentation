@@ -233,6 +233,18 @@ Date.parse('12/01/2016').month => 1
 
 				<section>
 					<h2>Duct Typing</h2>
+					<p align="left">In Ruby we don’t declare the types of variables or methods — everything is just some kind of object. In Ruby, the class isn't always the same as the type. Instead, the type of an object is defined more by what that object can do. It is called duck typing. If an object walks like a duck and talks like a duck, then the interpreter is happy to treat it as if it were a duck.</p>
+					<pre><code class="hljs" data-trim>
+def save_name(name, target)
+    target << name
+end
+
+array = []
+string = ''
+
+save_name('Vasyl', array) => ["Vasyl"]
+save_name('Vasyl', string) => "Vasyl"
+					</code></pre>
 				</section>
 
 				<section>
@@ -249,6 +261,16 @@ Date.parse('12/01/2016').month => 1
 
 				<section>
 					<h2>Methods</h2>
+					<p align="left">Method is defined using the keyword def. Method names should begin with a lowercase letter or underscore, followed by letters, digits, and underscore. A method name may end with one of ?, !, or =. Method definition:</p>
+					<pre><code class="hljs" data-trim>
+def my_method(arg1, arg2) # 2 arguments
+    # Code for the method would be here
+end
+					</code></pre>
+					<p align="left">Method invoking:</p>
+					<pre><code class="hljs" data-trim>
+my_method('first_param', 'second_param')
+					</code></pre>
 				</section>
 
 				<section>
