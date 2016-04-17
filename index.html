@@ -253,20 +253,48 @@ save_name('Vasyl', string) => "Vasyl"
 				</section>
 
 				<section>
-					<h2>Expressions</h2>
-					<h4>Constants</h4>
-					<h4>Variables</h4>
-					<h4>Naming</h4>
+					<h1>Expressions</h1>
 				</section>
 
 				<section>
-					<h2>Operators</h2>
-					<h4>Priority</h4>
+					<h2>Variables</h2>
+					<p align="left">Variables are the memory locations which hold any data to be used. Each variable holds a reference to an object. A name is an uppercase letter, lowercase letter, or an underscore ("_"), followed by Name characters (any combination of upper- and lowercase letters, underscore and digits).<br />You couldn't use any reserved in Ruby words for determining the name of the variable.</p>
+					<pre><code>
+local_variable = 'local variable'
+CONSTANT = 'constant'
+$global_variable = 'global variable'
+@instance_variable = 'instance variable'
+@@class_variable = 'class variable'
+
+person1 = 'Tim'
+person2 = person1
+person1[0] = 'J'
+
+person1 => "Jim"
+person2 => "Jim"
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Expressions</h2>
+					<p align="left">One of the first differences with Ruby is that anything that can reasonably return a value does: just about everything is an expression. For example, the if and case statements both return the value of the last expression executed. Methods have the same behavior. In Ruby, many operators are actually method calls.</p>
+					<pre><code>
+a = b = c = 0 => 0
+(a.*(b)).+(c) <=> a * b + c
+a, b, c = 1, 2, 3
+a, b = b, a
+a, b = 1, 2, 3, 4 => a=1, b=2
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Operators (high to low priority)</h2>
+					<img src="img/operators.png" width="75%" alt="Operators" style="border: none" />
 				</section>
 
 				<section>
 					<h2>Methods</h2>
-					<p align="left">Method is defined using the keyword def. Method names should begin with a lowercase letter or underscore, followed by letters, digits, and underscore. A method name may end with one of ?, !, or =. (You couldn't use any reserved in Ruby words for determining the method's name). Method definition:</p>
+					<p align="left">Method is defined using the keyword def. Method names should begin with a lowercase letter or underscore, followed by letters, digits, and underscore. A method name may end with one of ?, !, or =. Method definition:</p>
 					<pre><code class="hljs" data-trim>
 def my_method(arg1, arg2) # 2 arguments
     # Code for the method would be here
