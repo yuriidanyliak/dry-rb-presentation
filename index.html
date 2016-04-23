@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Ruby Control Flow</title>
+		<title>Ruby Basics</title>
 
-		<meta name="description" content="Ruby Control Flow lecture (part 1)">
+		<meta name="description" content="Ruby Basics lecture (part 1)">
 		<meta name="author" content="Vasyl Lasiak">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,8 +40,9 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h2>Ruby Control Flow</h2>
+					<h2>Ruby Basics</h2>
 					<h3>Part I</h3>
+					<img src="img/ruby.png" width="30%" alt="Ruby" style="border: none; background-color: #111" />
 				</section>
 
 				<section>
@@ -284,6 +285,43 @@ a = b = c = 0 => 0
 a, b, c = 1, 2, 3
 a, b = b, a
 a, b = 1, 2, 3, 4 => a=1, b=2
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Assignment operators</h2>
+					<pre><code>
++=   -=   *=   /=   =   %=   &=   |=   ^=   <<=   >>= &&= ||= **=
+					</code></pre>
+					<p align="left">No post- pre increment!</p>
+				</section>
+
+				<section>
+					<h2>Arithmetic operators</h2>
+					<pre><code>
++ - * / % **
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Comparison operators</h2>
+					<pre><code>
+== != > < <= >= <=> === .eql? .equal?
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Logical operators</h2>
+					<pre><code>
+and or not && || !
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Bitwise operators</h2>
+					<p align="left">Bitwise operator works on bits and perform bit by bit operation.</p>
+					<pre><code>
+& | ^ ~ << >>
 					</code></pre>
 				</section>
 
