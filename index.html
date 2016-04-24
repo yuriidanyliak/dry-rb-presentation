@@ -51,7 +51,7 @@
 						<li class="fragment grow highlight-current-blue">Data Types</li>
 						<li class="fragment grow highlight-current-blue">Expressions</li>
 						<li class="fragment grow highlight-current-blue">Operators</li>
-						<li class="fragment grow highlight-current-blue">Methods (defining / calling)</li>
+						<li class="fragment grow highlight-current-blue">Methods</li>
 					</ul>
 				</section>
 
@@ -92,7 +92,7 @@ false.class => FalseClass
 
 					<section>
 						<h2>Integer</h2>
-						<p align="left"> Integer numbers is simply a sequence of digits.<br />Fixnum numbers are integers up to a certain limit. The limit is machine dependent.<br />Bignum values hold integers outside the range of the Fixnum.<br />If any operation on a Fixnum exceeds its range, the value is automatically converted to a Bignum.</p>
+						<p align="left"> Integer numbers is simply a sequence of digits. Fixnum numbers are integers up to a certain limit. The limit is machine dependent. Bignum values hold integers outside the range of the Fixnum. If any operation on a Fixnum exceeds its range, the value is automatically converted to a Bignum.</p>
 						<pre><code class="hljs" data-trim>
 0.zero? => true
 7.next => 8
@@ -109,7 +109,7 @@ false.class => FalseClass
 
 					<section>
 						<h2>Float</h2>
-						<p align="left">Floating point numbers represent real numbers.<br />Complex, Big Decimal and Rational classes are not built-in to Ruby, but are distributet with Ruby as part of the standart library.</p>
+						<p align="left">Floating point numbers represent real numbers. Complex, Big Decimal and Rational classes are not built-in to Ruby, but are distributet with Ruby as part of the standart library.</p>
 						<pre><code class="hljs" data-trim>
 5.8.integer? => false
 7.1 - 2 => 5.1
@@ -175,7 +175,7 @@ array[2, 2] => [true, 4]
 
 (1..10).include?(5) => true
 (-5..-1).to_a => [-5, -4, -3, -2, -1]
-('a'...'d').each_with_index { |n, i| print "#{i + 1}: #{n}, " } => "1: a, 2: b, 3: c"
+('a'...'d').each_with_index { |n, i| print "#{i}: #{n}, " } => "0: a, 1: b, 2: c"
 					</code></pre>
 					<small><a href="http://ruby-doc.org/core-2.2.0/Range.html" target="_blank">Range Class methods</a></small>
 				</section>
@@ -259,7 +259,7 @@ save_name('Vasyl', string) => "Vasyl"
 
 				<section>
 					<h2>Variables</h2>
-					<p align="left">Variables are the memory locations which hold any data to be used. Each variable holds a reference to an object. A name is an uppercase letter, lowercase letter, or an underscore ("_"), followed by Name characters (any combination of upper- and lowercase letters, underscore and digits).<br />You couldn't use any reserved in Ruby words for determining the name of the variable.</p>
+					<p align="left">Variables are the memory locations which hold any data to be used. Each variable holds a reference to an object. A name is an uppercase letter, lowercase letter, or an underscore ("_"), followed by Name characters (any combination of upper- and lowercase letters, underscore and digits). You couldn't use any reserved in Ruby words for determining the name of the variable.</p>
 					<pre><code>
 local_variable = 'local variable'
 CONSTANT = 'constant'
@@ -274,6 +274,11 @@ person1[0] = 'J'
 person1 => "Jim"
 person2 => "Jim"
 					</code></pre>
+				</section>
+
+				<section>
+					<h2>Reserved words</h2>
+					<img src="img/ruby_reserved_words.png" width="75%" alt="Reserved words" style="border: none" />
 				</section>
 
 				<section>
