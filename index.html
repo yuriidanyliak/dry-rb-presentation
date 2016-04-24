@@ -336,6 +336,21 @@ and or not && || !
 				</section>
 
 				<section>
+					<h2>Operators overloading</h2>
+					<pre><code>
+class Fixnum
+    alias old_plus +
+
+    def +(other)
+        old_plus(other).succ
+    end
+end
+
+1 + 2 => 4
+					</code></pre>
+				</section>
+
+				<section>
 					<h2>Methods</h2>
 					<p align="left">Method is defined using the keyword def. Method names should begin with a lowercase letter or underscore, followed by letters, digits, and underscore. A method always returns a value and its name may end with one of ?, !, or =. Method definition:</p>
 					<pre><code class="hljs" data-trim>
