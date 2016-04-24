@@ -48,24 +48,24 @@
 				<section>
 					<h2>Quick lecture overview</h2>
 					<ul>
-						<li class="fragment grow">Data Types</li>
-						<li class="fragment grow">Expressions</li>
-						<li class="fragment grow">Operators</li>
-						<li class="fragment grow">Methods (defining / calling)</li>
+						<li class="fragment grow highlight-current-blue">Data Types</li>
+						<li class="fragment grow highlight-current-blue">Expressions</li>
+						<li class="fragment grow highlight-current-blue">Operators</li>
+						<li class="fragment grow highlight-current-blue">Methods (defining / calling)</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Data Types</h2>
 					<ul>
-						<li class="fragment grow">Booleans</li>
-						<li class="fragment grow">Numbers</li>
-						<li class="fragment grow">Strings</li>
-						<li class="fragment grow">Symbols</li>
-						<li class="fragment grow">Arrays</li>
-						<li class="fragment grow">Ranges</li>
-						<li class="fragment grow">Hashes</li>
-						<li class="fragment grow">Nil</li>
+						<li class="fragment grow highlight-current-blue">Booleans</li>
+						<li class="fragment grow highlight-current-blue">Numbers</li>
+						<li class="fragment grow highlight-current-blue">Strings</li>
+						<li class="fragment grow highlight-current-blue">Symbols</li>
+						<li class="fragment grow highlight-current-blue">Arrays</li>
+						<li class="fragment grow highlight-current-blue">Ranges</li>
+						<li class="fragment grow highlight-current-blue">Hashes</li>
+						<li class="fragment grow highlight-current-blue">Nil</li>
 					</ul>
 				</section>
 
@@ -326,13 +326,13 @@ and or not && || !
 				</section>
 
 				<section>
-					<h2>Operators (high to low priority)</h2>
+					<h2>Precedence (high to low)</h2>
 					<img src="img/operators.png" width="75%" alt="Operators" style="border: none" />
 				</section>
 
 				<section>
 					<h2>Methods</h2>
-					<p align="left">Method is defined using the keyword def. Method names should begin with a lowercase letter or underscore, followed by letters, digits, and underscore. A method name may end with one of ?, !, or =. Method definition:</p>
+					<p align="left">Method is defined using the keyword def. Method names should begin with a lowercase letter or underscore, followed by letters, digits, and underscore. A method always returns a value and its name may end with one of ?, !, or =. Method definition:</p>
 					<pre><code class="hljs" data-trim>
 def my_method(arg1, arg2) # 2 arguments
     # Code for the method would be here
@@ -342,6 +342,26 @@ end
 					<pre><code class="hljs" data-trim>
 my_method('first_param', 'second_param')
 					</code></pre>
+				</section>
+
+				<section>
+					<h2>Why do we need methods?</h2>
+					<ul>
+						<li class="fragment highlight-current-blue">They allow us to conceive of our program as a bunch of sub-steps. (Each sub-step can be its own method. When any program seems too hard, just break the overall program into sub-steps!);</li>
+						<li class="fragment highlight-current-blue">They allow us to reuse code instead of rewriting it;</li>
+						<li class="fragment highlight-current-blue">Methods allow us to keep our variable namespace clean (local variables only "live" as long as the methods does);</li>
+						<li class="fragment highlight-current-blue">Methods allow us to test small parts of our program in isolation from the rest. This is especially true in interpreted langaues, such as Ruby.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Steps to Writing a Method</h2>
+					<ul>
+						<li class="fragment highlight-current-blue">Understand the purpose of the method;</li>
+						<li class="fragment highlight-current-blue">Define the data that comes into the function from the caller (in the form of parameters);</li>
+						<li class="fragment highlight-current-blue">Define what data variables are needed inside the method to accomplish its goal;</li>
+						<li class="fragment highlight-current-blue">Decide on the set of steps that the program will use to accomplish this goal (the algorithm).</li>
+					</ul>
 				</section>
 
 				<section>
