@@ -389,6 +389,19 @@ my_method('first_param', 'second_param')
 				</section>
 
 				<section>
+					<h2>Recursion</h2>
+					<p align="left">A recursive methos is a method that calls itself. It can be used to replace cycle.</p>
+					<pre><code>
+def fact(n)
+    return 1 if n.zero?
+    n * fact(n-1)
+end
+
+fact(5) => 120
+					</code></pre>
+				</section>
+
+				<section>
 					<h2>What next?</h2>
 					<ul>
 						<li class="fragment grow">Control structures (if, unless, switch)</li>
